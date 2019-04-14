@@ -1,0 +1,4 @@
+theme: jekyll-theme-minimal
+title: "Docker 시작하기"
+logo: /static/docker-logo.png
+description: "Docker의 개념을 익히고 간단한 실습을 통해 Docker를 이해해보자"

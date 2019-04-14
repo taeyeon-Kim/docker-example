@@ -1,0 +1,22 @@
+# Mac
+.DS_Store
+
+# IntelliJ Idea
+.idea
+*.iml
+.project
+.settings/
+
+# Webpack
+node_modules/
+.vscode
+.eslintcache
+package-lock.json
+
+# Java
+*.class
+
+# Gradle
+.gradle
+/build/
+.gradletasknamecache

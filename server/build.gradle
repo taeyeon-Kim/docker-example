@@ -1,0 +1,39 @@
+buildscript {
+	ext {
+		springBootVersion = '2.1.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'war'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.navercorp'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	compileOnly('org.projectlombok:lombok')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	compile("com.github.jknack:handlebars-springmvc:4.0.5")
+	compile("com.github.jknack:handlebars-helpers:4.0.5")
+}
+
+bootWar {
+	sourceSets.main.java.outputDir = new File(buildDir, "classes/main")
+	sourceSets.test.java.outputDir = new File(buildDir, "classes/test")
+}
+
+tasks.processResources.dependsOn tasks.getByPath(":frontend:webpack")
