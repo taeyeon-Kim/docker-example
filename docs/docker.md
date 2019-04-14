@@ -1,13 +1,13 @@
 # Docker
 
-![docker](https://pages.oss.navercorp.com/taeyeonkim/docker-example/static/docker.png)
+![docker](https://taeyeon-kim.github.io/docker-example/static/docker.png)
  - 도커는 컨테이너를 이미지 파일로 빌드하고 배포하여 어디서나 실행할 수 있도록 해주는 오픈소스입니다.
  - 컨테이너를 git에 저장된 소스처럼 build/push/pull 할 수 있는 방법을 먼저 제공하면서 주목 받았습니다.
  - rkt, lxc, lxd 등의 경쟁자가 있지만 아직 도커 만큼 주목받지 못하고 있습니다.
  
 ## 도커 동작방식 (개요)
 
-![docker-flow](https://pages.oss.navercorp.com/taeyeonkim/docker-example/static/docker-flow.png)
+![docker-flow](https://taeyeon-kim.github.io/docker-example/static/docker-flow.png)
 
 - 도커는 클라이언트 (docker)와 서버 (dockerd)로 구성되어 있습니다. 이를 Docker Engine이라 합니다.
 - 모든 명령은 클라이언트에서 REST API로 서버에 요청되어 서버에서 수행합니다.

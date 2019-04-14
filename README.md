@@ -12,4 +12,4 @@ $ ./gradlew clean bootWar
 ~~~sh
 $ cp ./server/build/libs/*.war ./docker/war/
 ~~~
-## [가이드](https://pages.oss.navercorp.com/taeyeonkim/docker-example/)
+## [가이드](https://taeyeon-kim.github.io/docker-example/)

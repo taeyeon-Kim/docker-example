@@ -1,7 +1,7 @@
 # Container
 > [A standardized unit of software](https://www.docker.com/resources/what-container)
 
-![container](https://pages.oss.navercorp.com/taeyeonkim/docker-example/static/container.png)
+![container](https://taeyeon-kim.github.io/docker-example//static/container.png)
 
  - 컨테이너는 어플리케이션의 런타임 인스턴스입니다.
  - 컨테이너 단위로 OS, 라이브러리, 어플리케이션을 패키징 할 수 있습니다.
@@ -12,7 +12,7 @@
 ## Virtual Machine과 Container 비교
  - Virtual Machine과 Container 모두 리소스를 격리시키고 할당할 수 있는 장점이 있습니다. 그러나 컨테인너는 하드웨어 대신에 OS를 가상화하여 동작합니다. 그러므로 더 간편하고 효율적입니다.
  
-![container-vs-vm](https://pages.oss.navercorp.com/taeyeonkim/docker-example/static/container-vs-vm.png)
+![container-vs-vm](https://taeyeon-kim.github.io/docker-example/static/container-vs-vm.png)
 
 |  Virtual Machine        | Container          |
 |:-------------|:------------------|
